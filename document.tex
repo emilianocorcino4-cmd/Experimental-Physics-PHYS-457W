@@ -1,0 +1,296 @@
+\documentclass[]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{float}\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{float}
+\usepackage{hyperref}
+%opening
+\title{Characterization of Doped Silicon Using the Hall Effect}
+\author{Emiliano Corcino, Ethan Bleash }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Semiconductors play a vital role in modern technology, serving as the foundation for numerous electronic devices. They are valued for their ability to control material conductivity.Through our experiment utilizing the Hall effect, we calculated carrier density as a function of temperature. By using basic solid-state physics principles, we were able to determine the value for the enery difference introduced by doping the material to the conducting band to be $\Delta E $ = 0.0203 $\pm .0023$ eV.
+\end{abstract}
+
+\section{Introduction}
+\quad Semiconductors are crucial in todays technology, forming the basis of numerous electronic gadgets that influence\,our\,everyday.\,Their significance\,arise from their distinctive electrical characteristics, positioned between\,those\,of\,conductors and insulators.\,This attribute grants precise management over electricity flow, rendering semiconductors well-suited for a wide range of applications, spanning from computing and telecommunications to renewable energy and medical equipment.The initial observation of a semiconductor effect was made\,by\,Michael Faraday in 1833, when he observed a decrease in the resistance of silver sulfide with temperature,\,a\,phenomenon unlike that seen in metals.Subsequently\,Johann\,Hittorf conducted a thorough quantitative analysis of the temperature dependence of the electrical conductivity of Ag2S and Cu2S, publishing his findings in 1851.Later In 1878, Edwin Herbert Hall observed the deflection of charge carriers in solids in a magnetic field, known as the Hall effect, which later became instrumental in the studying of semiconductor properties.\,Following by  J. J. Thomson's discovery of the electron, various scientists proposed theories regarding electron-based conduction in metals.\,Eduard Riecke's theory in 1899 stands out for postulating the existence of both negative and positive charge carriers with distinct concentrations and mobilities.\,Around 1908, Karl Baedeker noted the conductivity dependence of copper iodide on its stoichiometry, particularly its iodine content.\,He additionally conducted Hall effect measurements on this substance, revealing the presence of carriers with a positive charge. In 1914, Johan Koenigsberger categorized solid-state materials into three classes based on their conductivity: metals, insulators, and variable conductors.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.4]{Alan Wilson}}
+	\caption{Alan Wilson’s theory of bands in solids.}
+	\label{fig6}
+\end{figure} 
+In 1931 Alan Wilson developed the band theory of solids based on the idea of empty and filled energy bands (Fig. 1). Wilson also confirmed that the conductivity of semiconductors was due to impurities.
+\subsection{More on semiconductors}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.3]{Allan}}
+	\caption{Basic device building blocks of (a) metal-semiconductor interface}
+	\label{fig7}
+\end{figure} 
+\quad We can see that semiconductor devices can be serve as the cornerstone of the electronics industry, with many of these devices constructed from a series of fundamental building blocks. Among these, the metal-semiconductor interface stands out as a crucial component, depicted in  (Fig. 2). This interface can function as a rectifying contact, permitting current flow in one direction akin to an ohmic contact. By utilizing the rectifying contact as a gate, it becomes possible to create a MESFET (metal-semiconductor field-effect transistor), a significant microwave device.
+
+\section{Theoretical Background}
+\subsection{Accessible Energies}
+\quad  The range of energies accessible to electrons serves as a distinguishing factor among insulators, conductors, and semiconductors. These energies are closely spaced, forming bands. Within these bands, there exists an energy range known as the band gap, where no electronic states are present, as depicted in (Fig. 3). In insulators, a substantial gap separates the valence band from the conduction band. Conversely, in good conductors like metals, the valence band and conduction band overlap. In semiconductors, there exists a small gap between the valence and conduction bands, which is narrow enough to allow for thermal excitation of electrons from the valence band to the conduction band.
+
+%The available energies for electrons help us to differentiate between insulators, conductors and semiconductors. The available energy states are so close to one another that they form bands. The Band dap is an enrgy range were no electronic states are present. As we can see in Figure one. In insulators, the valence band is separated from the conduction band by a large gap, in a good conductors such as metals the valence band overlaps the conduction band, whereas in  semiconductors there is a small gap between the valence and conduction bands, small enough allowing thermal excitation of electrons from the valence to conduction band
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{BandGap Enrgy}}
+	\caption{Diagram of the electronic band structure of insulators, semidonductor and metals. }
+\end{figure} 
+
+\subsection{Intrinsic and extrinsic semiconductors}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{type}}
+	\caption{Energy band diagram for (a) intrincsic, (b) n-type,  and (c) p-type}
+	\label{fig2}
+\end{figure} 
+\begin{itemize}
+	\item Intrisic is a pure semiconductor having no impurity as we can see in  (Fig. 2a).
+	\item A semiconductor in which doping has been introduced, thus changing the relative number and type of free charge carriers, is called an extrinsic semiconductor. An extrinsic semiconductor, in which conduction electrons are the majority carriers is an n-type
+	semiconductor and its band diagram is illustrated in  (Fig. 4b).one in which the holes are the majority charge carriers is a p-type semiconductor and is indicated in (Fig. 4c).
+	\end{itemize}
+\subsection{Concentration in semiconductors}
+\quad  The electron density in the conduction band is obtained by integrating density of state $\times$ probability of occupancy of state from the bottom to of the concuction band.
+\begin{equation}
+	n_{e} = \int_{E_{c}}^{\infty} g(E)f(E)dE
+	\end{equation}
+The density of state in the conduction band take the form:
+\begin{equation}
+	g(E) = \frac{\sqrt{2}m_e^{*3/2}}{\pi^2 \hbar^3}\left(E -E_c\right)^{1/2}
+	\end{equation}
+\quad The likelihood of an electronic state energy E being occupied by an electron is determined by the Fermi-Dirac distribution function. This function reflects the assumption that the number of electrons in the conduction band is significantly lower than the number of available states in this band. Specifically, when the difference between the energy E and the Fermi energy level (denoted as $( E_f )$) is much larger than the product of Boltzmann's constant $(k_B )$ and temperature $( T )$, the Fermi-Dirac distribution function governs the occupancy probability.
+\begin{equation}
+	f(E) = exp\left(- \frac{E -E_f}{k_B T}\right) 
+	\end{equation}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{Temperature}}
+	\caption{Electron concentratin of an n-type semiconductor in (a) low temperature (b) in a medium temoerature (c) high temperature.}
+	\label{fig4}
+\end{figure} 
+\quad At extremely low temperatures, conductivity approaches zero since donor atoms remain un-ionized due to minimal thermal vibrational energy. As temperature rises slightly, donor atoms undergo ionization and transition into the conduction band, as illustrated in  (Fig. 5). The electron concentration at such low temperatures is determined by
+\begin{equation}
+	n_e \propto exp\left( \frac{\Delta E }{2k_BT}\right) 
+	\end{equation}
+Were, $ \Delta E = E_c - E_d$ is the energy difference from donor energy level to bottom of conduction band. The low temperatre regime is also called the ionization regine (or Freeze-out region) as seein in  (Fig. 6).
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.4]{Region1}}
+	\caption{The temperature dependece of elctron density}
+	\label{fig3}
+\end{figure} 
+% This regone is impirnat beausei is the reagon where our experiemtn take place.
+% Also thuss concluting that by thaking the slop of this shit i get the assiated band bap. 
+\subsection{The Hall Effect}
+\quad	When electrons within the crystal lattice collide with it, they encounter electrical resistance as they are compelled to move in response to an electric field. Introducing a magnetic field causes these electrons to deflect sideways, inducing the emergence of an electric field in the perpendicular direction and subsequently a potential difference. This phenomenon is recognized as the Hall effect. By applying Ohm's law
+%Say that bold this are vectors
+\begin{equation}
+	\textbf{j} = \frac{I}{A}=\frac{1}{A} \frac{q}{t} = -ne\textbf{v}_{d} = ne^2\tau \textbf{E}/m
+	\end{equation}
+Were $q = (nAL)e$ is the total charge passes through the resistor in a time $t = L/v_d$. 
+\begin{equation}
+	\frac{mv_d}{\tau} = -e\textbf{E}
+	\end{equation}
+By taking an aproximation replacing the time rate of change of momentum (Force) to $mv/\tau$ we can see that the this equation is just the force fue to the electric field, and by using the loranze force we can get a comple expression that relates the emergent electrinc field and the magnetic field.
+%To derive  Importnat Quantieies related to the  hall effect. 
+\begin{equation}
+	\frac{m\textbf{v}_d}{\tau} = -e\left(  \textbf{E} + \textbf{v}_b \times \textbf{B} \right) 
+	\end{equation}
+If we asume that the magnetic field lies in the Z direction , and  define the cyclotron frequency $\omega_c = eB/m$ then we can rewite this equation as.
+\begin{align}
+   v_{d_{x}} = -\frac{e\tau}{m}E_x -\omega_c\tau v_{d_y}   \\
+    v_{d_{x}} = -\frac{e\tau}{m}E_x -\omega_c\tau v_{d_y}   \\
+   v_{d_{x}} =-\frac{e\tau}{m}E_x  
+	\end{align}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{Hall Effect}}
+	\caption{ Standard geometry for the hall effect }
+	\label{fig5}
+\end{figure} 
+A longitudinal electric field $E_x$ is applied, leading to a current density flowing in the x direction. As this eelctric field is inially turned on, the magnetic field deflects electrons along the y direction. This leads to a buildup of changes on the face parallet to the xz plane, and therfore an electric field $E_y$ within the conductor. an it happend that $v_{d_y}=0$ becuase the magnetic field and the current density is strictly 0 in the x dirention; Hence
+\begin{equation}
+	E_y = \frac{m \omega_c}{e} v_{d_x} = \frac{m \omega_c}{e} \left(-\frac{e\tau}{m}E_x \right) = -\omega_c\tau E_{x} = \frac{e\textbf{B}\tau}{m}E_x
+	\end{equation}
+From here we difine the hall coefficient $R_H$
+\begin{equation}
+	R_{H} = \frac{E_y}{j_{x}\textbf{B}}
+	\end{equation}
+were $j_x = ne^2\tau E_x/m$ current density is the x direction and n is the electron density. With this we can derive an important relation that we will use to undestan our sample.
+\begin{equation}
+	R_{H} = \frac{1}{ne}
+	\end{equation}
+This initial analysis allows us to derive several useful quantities that will be utilized extensively in this paper.
+\begin{itemize}
+	\item $R_{H} = \frac{dV_{H}}{dI} \frac{t}{B}$ Were t is the thickneess of the sample.
+	\item $\rho= \frac{d V_{x}}{dI} \frac{t*w}{L}$ Were w is the width and L the lenght of our sample. 
+	\end{itemize}
+%Missing the calcualtation of the Movility
+\section{Eperimental Method}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.15]{JP3}}
+	\caption{ Junction box connection used in measuring sample}
+	\label{fig10}
+\end{figure} 
+We examine the Hall effect using silicon that has been doped. In (Fig. 10), the sample is positioned between coils. (Fig.8 )illustrates the wiring setup for supplying current and measuring transverse ($V_{H_{+}}  - V_{H_{-}}$) and longitudinal voltages ($V_{+}  - V_{-}$).
+
+%The material we use to study the hall effect is dopped silicon in (Fig. 9) to the left we can see how the sample is monted in between the coi. and  in (Fig. 10 ) we can see the wire configuration for supplying  the current and the transverse voltage ($V_{H_{+}}  - V_{H_{-}}$) and longitudinal voltage ($V_{+}  - V_{-}$) configuration. 
+\subsection{Experimental set up}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{JP2}}
+	\caption{ Experimental set up }
+	\label{fig8}
+\end{figure} 
+\quad We employ a pair of Hewlett Packard 34401A Multimeters for measure longitudinal and transversal voltage. Additionally, we utilize two Keithley instruments: a 6220 precision current source for delivering current to the sample and a 2000 Multimeter for measuring the B-Field. A Lakeshore temperature controller regulates the temperature, while an Agilent N5770A DC Power Supply oversees the current supply to the magnetic field, as illustrated in  (Fig. 9).
+%We use two Hewlett Packard 34401A Multimeter to measue the longitudinal and transversal voltage. Then we use two Keithley; one 6220 pprecision current source to deliver the current to the sample and 2000 Multimeter to measue the B Field, and a lakeshore temperature Controller to control the Temperature, and A Agilent N5770A DC Power Supply to control the current supply to the magnetic field. As seen in Figure 8.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.15]{JP1}}
+	\caption{Experimental set up }
+	\label{fig9}
+\end{figure} 
+In (Fig. 10) depicts the sample positioned between the coils to achieve a constant magnetic field. On the right side, we have the vacuum pump is activated before the cooler to prevent ice formation inside the magnets.
+%In figure 9 that the sample in monted in between the coil so it gets as constant magnetic field as posible to the right we see the vaccum pump that is turn on befor the cooloer to ensure that doent form ice incide the magnets. 
+\subsection{Data Acquisition}
+\quad Before collecting data, it's crucial to specific steps. Initially, we initiate the vacuum pump to remove air from the coils. Subsequently, we open valves for both the compressor (responsible for supplying heat for temperature calibration) and the coil to prevent overheating. Following these steps, we can proceed to power-on the equipment and commence data collection.
+%befor taking data we have to make sure to follow impornat steps, we begin by turning the vaccume pump, to take the air form the coils, then we open valves for the compresos(encharge of supplyng heat for temperature calibration)and the coil so it don't over heat after that we can start turning the equipmen on and prociding to take data.
+\subsection{Data taken}
+\quad For data recording, we utilize LabView. Each dataset comprises a temperature reading, a magnetic field value, and the current flowing through the sample, denoted as $V_H$  and $V_L$ . Further details of these parameters are provided below.
+\begin{itemize}
+	\item Each data for  $V_{H}$ and $V_{L}$ was taken with a current through the sample of -15mA and 15mA, 51  with steps.
+	\item At the following temperates; 8K, 25K, 50K, 75K, 80K, 100K, 125K, 150K, 175K, 200K, 250K, 300K
+	\item At each temperature we measue $V_{H}$ and $V_{L}$ with different magnetic fields 
+		\begin{itemize}
+			\item B = - 0.403 $\pm$ 0.004T forward Magnetic field
+			\item B = 0.020  practically 0 
+			\item B = - 0.403 $\pm$ 0.004 T Reverce Magnetic field
+ \end{itemize}
+
+	\end{itemize}
+\section{Result and Analysis}
+
+\subsection{Resistivity vs Temperature}
+\quad We graphed the longitudinal voltage against the current ($V_{x}$ vs $I$). For different temperatures and magnetic fields. However, since our focus is on the resistivity, which doesn't depend on the magnetic field, we selected the data collected when no magnetic field was applied. Subsepuently, we performed a linaer fit and utilized the equation below to compute the resistivity.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.5]{QWE3}}
+	\caption{Plot of current applied versus Hall voltage for temperatures of 8K and 300K, with a magnetic field of 0.405.T}
+	\label{fig11}
+\end{figure} 
+\begin{table}[H]
+	\caption{Table of Resistivity and Temperatures}
+	\centering
+	\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+		\hline
+		$\rho [10^{-5}m] \Omega$ & 2.32995& 2.4084 & 2.6616 &2.87348 & 3.14325 & 3.65625 &4.5708 & 5.51655 &6.464447 & 8.59875&9.0345\\
+		\hline
+		\multirow{1}{4em}{T (K)} & 300& 250 & 200& 175& 150 & 125&100&75&50&25&8\\ 
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+
+\begin{equation}
+\rho= \frac{d V_{x}}{dI} \frac{t*w}{L}	
+\end{equation}
+We also plotted the resistivity against temperature to demonstrate that it follows the anticipated trend for a semiconductor.
+	%Table
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.3\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{QWE1}
+			\caption{Resistivity vs Temperature, form data}
+			\label{fig:sub1}
+		\end{subfigure}
+		\begin{subfigure}{.3\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{QWER1}
+			\caption{Resistivity plotted against temperature for an arbitrary semiconductor}
+			\label{fig:sub2}
+		\end{subfigure}
+		\caption{}
+		\label{fig:test}
+	\end{figure}
+\subsection{Mobility vs Temperature}
+\quad We plotted the Hall Voltage against the Current $(V_{H} \,\, vs \,\,  I)$ for various temperatures and magnetic fields using the dataset. Subsequently, we performed a linear fit and utilized the equation below to compute the Hall coeffision.
+\begin{equation}
+	 R_{H} = \frac{dV_{H}}{dI} \frac{t}{B}
+	\end{equation}
+We then related the Hall coefficient to mobility using (equation. 13). This procedure was repeated for each temperature.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.5]{QWE2}}
+	\caption{ Plot of current applied versus Longitudinal voltage for temperatures of 8K and 300K, with a magnetic field of 0.02T.}
+	\label{fig12}
+\end{figure} 
+	\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{QWE5}
+		\caption{Carrier density vs  temperature from data taken }
+		\label{fig:sub12}
+	\end{subfigure}
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{Region1}
+		\caption{}
+		\label{fig:sub22}
+	\end{subfigure}
+	\caption{Carrier density vs temperature for a semiconductor}
+	\label{fig:test1}
+\end{figure}
+\quad To determine the energy difference introduced by doping to the top conduction band, we established that we are in what is known as the freeze-out zone, by potting the carrier concetration vs the temperare as shown in (Fig. 14). Hence, we can utilize the exponential fit at low temperatures provided in Equation 4, shown in (Fig. 15). 
+\begin{table}[H]
+	\caption{Carrier density vs Temp}
+	\centering
+	\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+		\hline
+		n$ [10^{22}1/m] $ $\Omega$ & 8.10648& 8.00032 & 7.6446 &6.91606 & 6.10763 & 5.14924 &4.18298 & 3.99316 &2.58787 & 2.3045&2.40963\\
+		\hline
+		\multirow{1}{4em}{T (K)} & 300& 250 & 200& 175& 150 & 125&100&75&50&25&8\\ 
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.5]{QWE4}}
+	\caption{Carrier density vs 1/temp and expotential fit for determinig the $\Delta E$.}
+	\label{fig13}
+\end{figure} 
+\subsection{Values report}
+\begin{itemize}
+	\begin{figure}[H]
+		\centerline{\includegraphics[scale=.5]{QWE9}}
+		\caption{Range of resistivity and conductivity for insulators, semiconductors and conductors}
+		\label{fig15}
+	\end{figure} 
+	\item For the Resistivity we report a value of $\rho = 2.32*10^{-3} cm*\Omega$ at room temperature witch we can see from (fig. 16) that it laid in the accepted values for a semiconductor. 
+	\item A carrier density $n = 8.141211*10^{22} [1/m]$ and is in agreement for doping concentration for silicon semiconductors may range anywhere from $10^{13} cm^{-3}$ to $10^{18} cm^{-3}$.
+	\item And for the $\Delta E $ = 0.0203 $\pm .0023$ eV  and calcualted 
+	\begin{itemize}
+		\item slope = $\frac{\Delta E}{2k_B}$ we found the slope of (fig. 15) to be 118.22 $\pm$13.6
+		\item the error come form the standar deviation of the exponetial fit. 
+		\end{itemize}
+	\end{itemize}
+\section{Conclution}
+\quad We conducted an experiment using the Hall effect to characterize doped silicon. From there, we calculated the carrier density of the sample as a function of temperature and related this quantity to semiconductor theory to determine the energy difference introduced by doping in the material.
+\begin{enumerate}
+	\pagebreak
+\item N.Deshler,\textit{The Hall Effect in a Semiconductor}. (University of California Berkley, 2021)
+\item A.C Melissinos and J. Napolitano, \textit{Experiments in modern physics} (Academic Press, 1966) pp. 80-98.
+\item A.Shaheen et at.\textit{Band Structure and Electrical Conductivity in Semiconductors} (LUMS school of Science and Engineering, 2015)  
+\end{enumerate}
+\end{document}
