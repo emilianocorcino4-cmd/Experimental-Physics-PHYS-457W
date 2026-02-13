@@ -2,4 +2,4 @@
 --
 ## Experimet 1 Excitation of Mecury by Electron Collision
 ## Experiment 2  Measuring Speend of light 
-## Experimet Hall effect and Semiconductors 
+## Experimet 3 Hall effect and Semiconductors 
